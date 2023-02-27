@@ -1,0 +1,15 @@
+//add header
+
+
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+
+
+//use
+
+@HttpContextAccessor.HttpContext.Session.GetString("sum")
+
+
+//add program file or startup
+ services.AddHttpContextAccessor();
